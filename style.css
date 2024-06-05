@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid violet;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.navbar-s1__title {
+    color: plum;
+}
+
+.navbar-s2 {
+    border: solid 1px black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-items: center;
+
+
+}
+
+.navbar-s2 input {
+    border: none;
+    width: 100%;
+    color: transparent;
+
+}
+
+.navbar-s2 input:focus {
+    border: none;
+
+}
+
+.navbar-s3 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.mylearning__popup{
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top: 150%;
+    right: 0;
+    display: none;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+}
+.Catergories {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-around;
+    border: solid 1px black;
+    border-radius: 10px;
+
+}
+
+.Catergories p {
+    background-color: plum;
+    color: beige;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image img {
+    width: 100%;
+    position: relative;
+}
+
+.recommended-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+.course-card {
+    width: 400px;
+}
+
+.course-card img {
+    height: 50%;
+    width: 100%;
+}
+
+.recommended {
+    padding: 10px;
+}
+
+.topic__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+
+.topic__container p {
+    border: solid 2px black;
+    flex-grow: 1;
+    padding: 10px;
+    flex-basis: 25%;
+}
+
+.popular__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+.popular{
+    padding: 10px;
+}
+.footer-one{
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+.footer-one__s1{
+padding: 10px;
+}
+.footer-one__s2{
+    padding: 10px;
+}
+.footer{
+    background-color: black;
+    color: plum;
+    padding: 10px;
+}
+.footer-two{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sale-image__offer{
+    background-color: white;
+    color: black;
+    bottom: 70%;
+    position: absolute;
+    left: 20%;
+    width: 400px;
+    padding: 20px;
+}
