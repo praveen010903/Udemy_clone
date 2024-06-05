@@ -53,11 +53,16 @@ body {
     gap: 10px;
     align-items: center;
 }
-.mylearning{
+.navbar-s4{
+    display: none;
+}
+
+.mylearning {
     position: relative;
     cursor: pointer;
 }
-.mylearning__popup{
+
+.mylearning__popup {
     position: absolute;
     background-color: white;
     border: solid black 1px;
@@ -66,9 +71,11 @@ body {
     right: 0;
     display: none;
 }
-.mylearning:hover .mylearning__popup{
+
+.mylearning:hover .mylearning__popup {
     display: block;
 }
+
 .Catergories {
     display: flex;
     padding: 10px;
@@ -85,11 +92,12 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
-.Catergories p:hover{
-cursor: pointer;
-background-color: white;
-color: plum;
-transition: 2s;
+
+.Catergories p:hover {
+    cursor: pointer;
+    background-color: white;
+    color: plum;
+    transition: 2s;
 }
 
 .image img {
@@ -108,6 +116,9 @@ transition: 2s;
 
 .course-card {
     width: 400px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .course-card img {
@@ -134,39 +145,46 @@ transition: 2s;
     flex-basis: 25%;
 }
 
-.popular__container{
+.popular__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 10px;
 }
-.popular{
+
+.popular {
     padding: 10px;
 }
-.footer-one{
+
+.footer-one {
     display: flex;
     gap: 10px;
     margin: 20px;
 }
-.footer-one__s1{
-padding: 10px;
-}
-.footer-one__s2{
+
+.footer-one__s1 {
     padding: 10px;
 }
-.footer{
+
+.footer-one__s2 {
+    padding: 10px;
+}
+
+.footer {
     background-color: black;
     color: plum;
     padding: 10px;
 }
-.footer-two{
+
+.footer-two {
     margin: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.sale-image__offer{
+
+.sale-image__offer {
     background-color: white;
     color: black;
     bottom: 70%;
@@ -179,19 +197,22 @@ padding: 10px;
     animation-fill-mode: forwards;
     opacity: 0;
 }
-@keyframes zoom{
+
+@keyframes zoom {
     0% {
         transform: scale(0);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: scale(1);
         opacity: 1;
     }
 }
+
 @media screen and (max-width:800px) {
     body {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
 
@@ -199,3 +220,13 @@ padding: 10px;
     .course-card {
         flex-basis: 40%;
     }
+    .Catergories{
+        display: none;
+    }
+    .navbar-s2,.navbar-s3{
+        display: none;
+    }
+    .navbar-s4{
+        display: block;
+    }
+}
