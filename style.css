@@ -189,3 +189,13 @@ padding: 10px;
         opacity: 1;
     }
 }
+@media screen and (max-width:800px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .course-card {
+        flex-basis: 40%;
+    }
